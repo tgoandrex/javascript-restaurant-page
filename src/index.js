@@ -1,1 +1,4 @@
-alert("Hey from Webpack!");
+import { run } from "../app";
+import "./main.css"
+
+run();
