@@ -1,5 +1,5 @@
-import { renderFrontPage } from "./src/app/landingPage";
+import { renderLandingPage } from "./src/app/landingPage";
 
 export const run = () => {
-    renderFrontPage();
+    renderLandingPage();
 }

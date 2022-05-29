@@ -1,3 +1,3 @@
-export const renderFrontPage = () => {
+export const renderLandingPage = () => {
     alert("Hey from landingPage.js!");
 }

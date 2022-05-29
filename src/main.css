@@ -1,3 +1,81 @@
-body {
-    background: purple;
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+#grid-container {
+    display: inline-grid;
+    grid-template-columns: minmax(175px, 10%) 30% 30% 30%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "header content content content"
+        "header content content content"
+        "header content content content"
+        "header content content content";
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    grid-area: header;
+}
+
+#content {
+    grid-area: content;
+    background-image: url("https://images.pexels.com/photos/326279/pexels-photo-326279.jpeg");
+    background-size: cover;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+#navigation-tabs {
+    padding-left: 25%;
+}
+
+#navigation-tabs li {
+    margin: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+}
+
+#logo-container {
+    height: 150px;
+    width: 150px;
+    margin: 0 auto;
+}
+
+#logo {
+    height: 100%;
+    width: 100%;
+}
+
+#headline {
+    font-size: 3.5em;
+    background: white;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    padding: 0 25px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+#testimonials {
+    width: 30%;
+    color: white;
+    margin: 15% auto 0 auto;
+}
+
+#testimonial-heading {
+    font-size: 1.5em;
+}
+
+.testimonial-name {
+    font-size: 0.75em;
 }
