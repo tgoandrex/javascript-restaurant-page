@@ -1,0 +1,13 @@
+#testimonials {
+    width: 30%;
+    color: white;
+    margin: 15% auto 0 auto;
+}
+
+#testimonial-heading {
+    font-size: 1.5em;
+}
+
+.testimonial-name {
+    font-size: 0.75em;
+}

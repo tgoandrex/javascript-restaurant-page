@@ -57,25 +57,11 @@ a {
     width: 100%;
 }
 
-#headline {
+.headline {
     font-size: 3.5em;
     background: white;
     font-family: Brush Script MT, Brush Script Std, cursive;
     padding: 0 25px;
     border-radius: 10px;
     margin-top: 10px;
-}
-
-#testimonials {
-    width: 30%;
-    color: white;
-    margin: 15% auto 0 auto;
-}
-
-#testimonial-heading {
-    font-size: 1.5em;
-}
-
-.testimonial-name {
-    font-size: 0.75em;
 }

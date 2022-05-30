@@ -1,9 +1,8 @@
-import { content } from "./utils/getContentDiv";
+import { content } from "./utils/domElements";
 
-export const renderLandingPage = () => {
+const renderLandingPage = () => {
     const span = document.createElement("span");
-    
-    span.id = "headline";
+    span.className = "headline";
     span.textContent = "A Taste of Home";
     content.appendChild(span);
     const divTestimonial = document.createElement("div");
@@ -32,3 +31,13 @@ export const renderLandingPage = () => {
         listItem.appendChild(span);
     });
 }
+
+const renderMenuPage = () => {
+
+}
+
+const renderContactPage = () => {
+
+}
+
+export {renderLandingPage, renderMenuPage, renderContactPage}
