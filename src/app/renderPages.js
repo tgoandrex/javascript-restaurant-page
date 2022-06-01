@@ -74,7 +74,53 @@ const renderMenuPage = () => {
 }
 
 const renderContactPage = () => {
+    const span = document.createElement("span");
+    span.className = "headline";
+    span.textContent = "Contact";
+    content.appendChild(span);
+    const form = document.createElement("form");
+    content.appendChild(form);
 
+    const formSections = [
+        ["First Name:", "fname", "text"],
+        ["Last Name:", "lname", "text"],
+        ["Email:", "email", "email"],
+        ["Phone #:", "phone", "phone"]
+    ];
+
+    formSections.forEach(function(section) {
+        const formGroupDiv = document.createElement("div");
+        formGroupDiv.className = "form-group";
+        form.appendChild(formGroupDiv);
+        const label = document.createElement("label");
+        label.htmlFor = section[1];
+        label.textContent = section[0];
+        formGroupDiv.appendChild(label);
+        const lineBreak = document.createElement("br");
+        formGroupDiv.appendChild(lineBreak);
+        const input = document.createElement("input");
+        input.type = section[2];
+        input.id = section[1];
+        input.name = section[1];
+        formGroupDiv.appendChild(input);
+    });
+
+    const formGroupDiv = document.createElement("div");
+    formGroupDiv.className = "form-group";
+    form.appendChild(formGroupDiv);
+    const label = document.createElement("label");
+    label.htmlFor = "message";
+    label.textContent = "Your comments or queries:";
+    formGroupDiv.appendChild(label);
+    const lineBreak = document.createElement("br");
+    formGroupDiv.appendChild(lineBreak);
+    const textArea = document.createElement("textarea");
+    textArea.name = "message";
+    formGroupDiv.appendChild(textArea);
+    const submitButton = document.createElement("button");
+    submitButton.id = "submit";
+    submitButton.textContent = "Submit";
+    content.appendChild(submitButton);
 }
 
 export {renderLandingPage, renderMenuPage, renderContactPage}

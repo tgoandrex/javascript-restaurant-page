@@ -1,4 +1,4 @@
-import { renderLandingPage, renderMenuPage } from "./src/app/renderPages";
+import { renderLandingPage, renderMenuPage, renderContactPage } from "./src/app/renderPages";
 import { content, homeBtn, menuBtn, contactBtn } from "./src/app/utils/domElements";
 import { removeAllChildNodes } from "./src/app/utils/functions"
 
@@ -12,9 +12,9 @@ menuBtn.addEventListener("click", function() {
 });
 contactBtn.addEventListener("click", function() {
     removeAllChildNodes(content);
-    renderLandingPage();
+    renderContactPage();
 });
 
 export const run = () => {
-    // renderLandingPage();
+    renderLandingPage();
 }
