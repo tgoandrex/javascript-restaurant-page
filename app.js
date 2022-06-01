@@ -1,4 +1,4 @@
-import { renderLandingPage } from "./src/app/renderPages";
+import { renderLandingPage, renderMenuPage } from "./src/app/renderPages";
 import { content, homeBtn, menuBtn, contactBtn } from "./src/app/utils/domElements";
 import { removeAllChildNodes } from "./src/app/utils/functions"
 
@@ -8,7 +8,7 @@ homeBtn.addEventListener("click", function() {
 });
 menuBtn.addEventListener("click", function() {
     removeAllChildNodes(content);
-    renderLandingPage();
+    renderMenuPage();
 });
 contactBtn.addEventListener("click", function() {
     removeAllChildNodes(content);
