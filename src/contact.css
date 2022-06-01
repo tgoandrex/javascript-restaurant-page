@@ -1,0 +1,32 @@
+.form-group {
+    margin: 15px;
+}
+
+.form-group:last-child {
+    grid-column: span 2;
+}
+
+#submit {
+    background: blue;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    height: 50px;
+    width: 125px;
+}
+
+textarea {
+    width: 300px;
+    height: 150px;
+}
+
+@media only screen and (max-width: 800px) {
+    .form-group:last-child {
+        grid-column: span 1;
+    }
+
+    textarea {
+        width: 130px;
+        height: 65px;
+    }
+}

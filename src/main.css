@@ -65,3 +65,20 @@ a {
     border-radius: 10px;
     margin-top: 10px;
 }
+
+form, #menu-main {
+    background: white;
+    width: 50%;
+    margin: 75px auto;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    padding: 15px 0;
+}
+
+@media only screen and (max-width: 800px) {
+    form, #menu-main {
+        grid-template-columns: 100%;
+    }
+}
